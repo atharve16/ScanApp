@@ -4,7 +4,6 @@ import { doc, getDoc, collection, query, where, getDocs, orderBy } from 'firebas
 import { useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
 import { Clock, LogOut, MapPin, User, Calendar, Timer } from 'lucide-react';
-import './Dashboard.css';
 
 const UserDashboard = () => {
   const [userData, setUserData] = useState(null);

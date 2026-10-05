@@ -3,7 +3,6 @@ import { doc, setDoc } from 'firebase/firestore';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { db, auth } from '../firebaseConfig';
 import { useNavigate } from 'react-router-dom';
-import './UserRegister.css';
 
 const UserRegister = () => {
   const [formData, setFormData] = useState({

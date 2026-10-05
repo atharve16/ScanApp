@@ -5,7 +5,6 @@ import { auth } from "../firebaseConfig"; // Firebase configuration
 
 // Pages and Components
 import Home from "../pages/Home";
-import QRCodeGenerator from "../pages/QRCodeGenerator";
 import AdminLogin from "../Admin/AdminLogin";
 import Dashboard from "../Admin/Dashboard";
 import AdminRegister from "../Admin/AdminRegister";
@@ -30,7 +29,7 @@ const AppRoutes = () => {
         const fetchRole = async () => {
           const email = currentUser.email;
 
-          if (email === "cs2022239@global.org.in") {
+          if (email === "teamofhhk@gmail.com") {
             setRole("admin");
           } else {
             setRole("user");
@@ -66,7 +65,6 @@ const AppRoutes = () => {
       <Route path="/HomePage" element={<HomePage />} />
       <Route path="/Home" element={<Home />} />
       <Route path="/UserRegister" element={<UserRegister />} />
-      <Route path="/about" element={<QRCodeGenerator />} />
 
       {/* Admin Login */}
       <Route

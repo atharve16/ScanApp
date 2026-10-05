@@ -3,7 +3,6 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth, db } from '../firebaseConfig';
 import { useNavigate } from 'react-router-dom';
 import { doc, getDoc } from 'firebase/firestore';
-import './UserLogin.css';
 
 const UserLogin = () => {
   const [formData, setFormData] = useState({
